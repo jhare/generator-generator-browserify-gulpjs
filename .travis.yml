@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - '0.10'
+before_install:
+  - currentfolder=${PWD##*/}
+  - if [ "$currentfolder" != 'generator-generator-browserify-gulpjs' ]; then cd .. && eval "mv $currentfolder generator-generator-browserify-gulpjs" && cd generator-generator-browserify-gulpjs; fi
+
